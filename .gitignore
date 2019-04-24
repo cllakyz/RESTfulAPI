@@ -18,3 +18,5 @@ RESTfulAPI.sublime-workspace
 .sudo_as_admin_successful
 after.sh
 aliases
+.bash_aliases
+.bash_history
