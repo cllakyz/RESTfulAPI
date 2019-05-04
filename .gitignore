@@ -20,3 +20,4 @@ after.sh
 aliases
 .bash_aliases
 .bash_history
+.gitignore
