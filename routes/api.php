@@ -40,7 +40,7 @@ Route::resource('sellers.products', 'Seller\SellerProductController', ['except' 
 /** Transactions */
 Route::resource('transactions', 'Transaction\TransactionController', ['only' => ['index', 'show']]);
 Route::resource('transactions.categories', 'Transaction\TransactionCategoryController', ['only' => ['index']]);
-Route::resource('transactions.seller', 'Transaction\TransactionSellerController', ['only' => ['index']]);
+Route::resource('transactions.sellers', 'Transaction\TransactionSellerController', ['only' => ['index']]);
 /** Users */
 Route::resource('users', 'User\UserController', ['except' => ['create', 'edit']]);
 Route::name('verify')->get('users/verify/{token}', 'User\UserController@verify');
