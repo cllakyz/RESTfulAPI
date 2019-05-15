@@ -41,6 +41,7 @@ class Kernel extends HttpKernel
             'signature:X-Application-Name',
             'throttle:10,1',
             'bindings',
+            'cors',
         ],
     ];
 
@@ -63,5 +64,6 @@ class Kernel extends HttpKernel
         'scopes' => \Laravel\Passport\Http\Middleware\CheckScopes::class,
         'signature' => \App\Http\Middleware\SignatureMiddleware::class,
         'transform.input' => \App\Http\Middleware\TransformInput::class,
+        'cors' => \Barryvdh\Cors\HandleCors::class,
     ];
 }
