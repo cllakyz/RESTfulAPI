@@ -3,7 +3,7 @@
 namespace App\Exceptions;
 
 use App\Traits\ApiResponser;
-use Barryvdh\Cors\CorsService;
+use Asm89\Stack\CorsService;
 use Exception;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
