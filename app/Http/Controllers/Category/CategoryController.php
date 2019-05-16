@@ -70,7 +70,7 @@ class CategoryController extends ApiController
     public function update(Request $request, Category $category)
     {
         $this->allowedAdminAction();
-        $category->fill($request->intersect([
+        $category->fill($request->only([
             'name',
             'description',
         ]));

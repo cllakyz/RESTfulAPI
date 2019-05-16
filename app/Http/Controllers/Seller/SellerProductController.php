@@ -82,7 +82,7 @@ class SellerProductController extends ApiController
         $this->validate($request, $rules);
         $this->checkSeller($seller, $product);
 
-        $product->fill($request->intersect([
+        $product->fill($request->only([
             'name',
             'description',
             'quantity',
